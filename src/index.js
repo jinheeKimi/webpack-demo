@@ -6,6 +6,15 @@ import _ from 'lodash';
 import './style.css';
 import './hello.scss';
 
+
+import './js/circle';
+
+//named import: 반드시 {}안에 동일한 이름으로 넣어야 한다.
+import {area, circumference} from "./js/circle";
+import xxx from "./js/cube";
+
+
+
 function component() {
     let element = document.createElement('div');
 
@@ -19,4 +28,4 @@ function component() {
 document.body.appendChild(component());
 
 
-console.log("hellow");
+console.log("area(5), circumference");
